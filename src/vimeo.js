@@ -1,5 +1,5 @@
 /**
- * GA Video Tracking
+ * GA Code Samples
  *
  * Vimeo Video Tracking Plugin
  *

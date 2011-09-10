@@ -1,5 +1,5 @@
 /**
- * GA Video Tracking
+ * GA Code Samples
  *
  * HTML5 Video Tracking Plugin
  *
