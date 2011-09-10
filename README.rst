@@ -6,11 +6,6 @@
 GA Code Samples
 ===============
 
-.. _synopsis:
-
-Synopsis
---------
-
 This is a collection of scripts to help tracking with Google Analytics
 
 .. _doc:
@@ -39,7 +34,12 @@ Works only on Vimeo videos that were embeded using the ``<iframe>`` code.
 So if you still using the old embed/object method you should consider updating
 the video embed code before implementing with script.
 
-Won't work for ie6 or ie7.
+This extension is going to reload the videos on the page when it binds the 
+events unless you append the query parameter ``api=1`` to the iframe 
+src.
+
+Won't work for ie6 or ie7. Because they lack the postMessage directive needed 
+to comunicate with the iframes.
 
 .. _Vimeo: http://www.vimeo.com/
 
@@ -65,6 +65,13 @@ So if you still using the old embed/object method you should consider updating
 the video embed code before implementing with script.
 
 .. _YouTube http://www.youtube.com/
+
+This extension is going to reload the videos on the page when it binds the 
+events unless you append the query parameter ``enablejsapi=1`` to the iframe 
+src.
+
+Won't work for ie6 or ie7. Because they lack the postMessage directive needed 
+to comunicate with the iframes.
 
 HTML5 Media Tracking
 ~~~~~~~~~~~~~~~~~~~~
