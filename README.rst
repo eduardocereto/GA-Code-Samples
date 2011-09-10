@@ -20,7 +20,7 @@ Documentation
 
 Vimeo Video Tracking
 ~~~~~~~~~~~~~~~~~~~~
-vimeo.js
+  vimeo.js
 
 
 Implements Google analytics tracking for Vimeo_ Videos.
@@ -35,9 +35,9 @@ Vimeo Video  pause   <video url>
 Vimeo Video  finish  <video url>
 ===========  ======  ===========
 
-Works only on Vimeo videos that were embeded using the `<iframe>` code. 
+Works only on Vimeo videos that were embeded using the ``<iframe>`` code. 
 So if you still using the old embed/object method you should consider updating
- the video embed code before implementing with script.
+the video embed code before implementing with script.
 
 Won't work for ie6 or ie7.
 
@@ -45,7 +45,7 @@ Won't work for ie6 or ie7.
 
 YouTube Video Tracking
 ~~~~~~~~~~~~~~~~~~~~~~
-youtube.js
+  youtube.js
 
 Implements Google analytics tracking for YouTube_ Videos.
 
@@ -60,30 +60,30 @@ YouTube Video  finish                <video url>
 YouTube Video  error (<error code>)  <video url>
 =============  ====================  ===========
 
-Works only on Youtube videos that were embeded using the `<iframe>` code. 
+Works only on Youtube videos that were embeded using the ``<iframe>`` code. 
 So if you still using the old embed/object method you should consider updating
- the video embed code before implementing with script.
+the video embed code before implementing with script.
 
 .. _YouTube http://www.youtube.com/
 
 HTML5 Media Tracking
 ~~~~~~~~~~~~~~~~~~~~
-html5_media.js
+  html5_media.js
 
-Will track interactions for `<video>` and `<audio>` tags.
+Will track interactions for ``<video>`` and ``<audio>`` tags.
 
-Of course it only works for browsers that support the html5 `<audio>` and 
-`<video>` tags.
+Of course it only works for browsers that support the html5 ``<audio>`` and 
+``<video>`` tags.
 
 ===========  ========  ===========
  Category     Action      Label
 ===========  ========  ===========
- AUDIO        play     <video url>
- AUDIO        pause    <video url>
- AUDIO        ended    <video url>
- VIDEO        play     <video url>
- VIDEO        pause    <video url>
- VIDEO        ended    <video url>
+ AUDIO        play     <currentSrc>
+ AUDIO        pause    <currentSrc>
+ AUDIO        ended    <currentSrc>
+ VIDEO        play     <currentSrc>
+ VIDEO        pause    <currentSrc>
+ VIDEO        ended    <currentSrc>
 ===========  ========  ===========
 
 .. _license:
@@ -91,7 +91,7 @@ Of course it only works for browsers that support the html5 `<audio>` and
 License
 -------
 
-Copyright (C) 2011 by Cardinal Path
+Copyright (C) 2011 by **Cardinal Path**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
