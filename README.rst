@@ -27,11 +27,13 @@ Implements Google analytics tracking for Vimeo_ Videos.
 
 Will add the following events.
 
+===========  ======  ===========
  Category    Action     Label
 ===========  ======  ===========
 Vimeo Video  play    <video url>
 Vimeo Video  pause   <video url>
 Vimeo Video  finish  <video url>
+===========  ======  ===========
 
 Works only on Vimeo videos that were embeded using the `<iframe>` code. 
 So if you still using the old embed/object method you should consider updating
@@ -49,12 +51,14 @@ Implements Google analytics tracking for YouTube_ Videos.
 
 Will add the following events.
 
+=============  ====================  ===========
    Category           Action            Label
 =============  ====================  ===========
 YouTube Video  play                  <video url>
 YouTube Video  pause                 <video url>
 YouTube Video  finish                <video url>
 YouTube Video  error (<error code>)  <video url>
+=============  ====================  ===========
 
 Works only on Youtube videos that were embeded using the `<iframe>` code. 
 So if you still using the old embed/object method you should consider updating
@@ -71,6 +75,7 @@ Will track interactions for `<video>` and `<audio>` tags.
 Of course it only works for browsers that support the html5 `<audio>` and 
 `<video>` tags.
 
+===========  ========  ===========
  Category     Action      Label
 ===========  ========  ===========
  AUDIO        play     <video url>
@@ -79,6 +84,7 @@ Of course it only works for browsers that support the html5 `<audio>` and
  VIDEO        play     <video url>
  VIDEO        pause    <video url>
  VIDEO        ended    <video url>
+===========  ========  ===========
 
 .. _license:
 
