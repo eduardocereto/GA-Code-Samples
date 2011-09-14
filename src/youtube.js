@@ -9,6 +9,8 @@
  * @author Eduardo Cereto <eduardocereto@gmail.com>
  */
 
+(function(){
+
 /**
  * Called when the Video State changes
  *
@@ -100,5 +102,7 @@ function _trackYoutube(force) {
     }
 }
 
-_trackYoutube();
+window['_trackYoutube'] = _trackYoutube;
+
+})();
 

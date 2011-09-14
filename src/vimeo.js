@@ -9,6 +9,7 @@
  * @author Eduardo Cereto <eduardocereto@gmail.com>
  */
 
+(function(){
 /**
  * Helper function to post messages to a vimeo player
  *
@@ -116,5 +117,6 @@ function _trackVimeo(force) {
     }
 }
 
-_trackVimeo();
+window['_trackVimeo'] = _trackVimeo;
+})();
 

@@ -10,6 +10,7 @@
  */
 
 
+(function(){
 /**
  * Cross Browser addEventListener.
  *
@@ -82,4 +83,9 @@ function _trackVideo(){
 function _trackAudio(){
     _trackMedia('audio');
 }
+
+window['_trackVideo'] = _trackVideo;
+window['_trackAudio'] = _trackAudio;
+
+})();
 
