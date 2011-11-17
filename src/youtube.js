@@ -9,6 +9,9 @@
  * @author Eduardo Cereto <eduardocereto@gmail.com>
  */
 
+//Shortcuts, these speed up and compress the code
+var sindexOf = String.prototype.indexOf;
+
 (function(){
 
 /**
