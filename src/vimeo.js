@@ -102,7 +102,18 @@ function _trackVimeo(force) {
         }
     }
     if (vimeo_videos > 0 && _has_vimeo_window_event === false) {
-        this._addEventListener(window, 'message', function(event) {
+        var WindowEvent = function(callback){
+            if (window.addEventListener) {
+                window.addEventListener('message', callback, false);
+            }
+            // IE
+            else {
+                window.attachEvent('onmessage', callback, false);
+            }
+        };
+
+
+        WindowEvent(function(event) {
             if (sindexOf.call(event.origin, '//player.vimeo.com') > -1) {
                 var data = JSON.parse(event.data);
                 if (data.event === 'ready') {
@@ -117,7 +128,7 @@ function _trackVimeo(force) {
                 }
             }
 
-        }, false);
+        });
         _has_vimeo_window_event = true;
     }
 }
