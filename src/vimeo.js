@@ -112,7 +112,7 @@ function _trackVimeo(force) {
                         _vimeo_urls[data.player_id] = data.value;
                     }
                 } else {
-                    _gas.push(['_trackEvent', 'Vimeo Video',
+                    _gaq.push(['_trackEvent', 'Vimeo Video',
                         data.event, _vimeo_urls[data.player_id]]);
                 }
             }
