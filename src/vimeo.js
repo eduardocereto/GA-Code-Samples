@@ -10,6 +10,11 @@
  */
 
 (function(){
+
+//Shortcuts, these speed up and compress the code
+var sindexOf = String.prototype.indexOf;
+
+
 /**
  * Helper function to post messages to a vimeo player
  *
