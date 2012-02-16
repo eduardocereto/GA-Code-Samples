@@ -13,6 +13,20 @@ This is a collection of scripts to help tracking with Google Analytics
 Documentation
 -------------
 
+Max Scroll Tracking
+~~~~~~~~~~~~~~~~~~~
+  max_scroll.js
+
+Implements Google Analytics tracking for max scroll on the page.
+
+It will fire an event on `window.onunload` with the maximum percentage scrolled.
+
+===========  =================  =========== =======================
+ Category         Action           Label             Value
+===========  =================  =========== =======================
+Max Scroll   range (eg: 21-30)   <page url>  <percentage scrolled>
+===========  =================  =========== =======================
+
 Vimeo Video Tracking
 ~~~~~~~~~~~~~~~~~~~~
   vimeo.js
