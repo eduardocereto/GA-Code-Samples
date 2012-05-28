@@ -6,7 +6,15 @@
 GA Code Samples
 ===============
 
-This is a collection of scripts to help tracking with Google Analytics
+This is a collection of scripts to help implement event tracking with Google Analytics
+
+Attention
+---------
+
+**These scripts are very old and unsupported.** You should use them at your own risk. 
+If you're looking for an updated version of them you should check out `GAS Google Analytics on Steroids`_ .
+
+.. _GAS Google Analytics on Steroids: https://github.com/CardinalPath/gas
 
 .. _doc:
 
